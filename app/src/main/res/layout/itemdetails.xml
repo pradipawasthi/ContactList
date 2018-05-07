@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.financial_hospital.listdemo.DetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l1"
+        android:gravity="center"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="211dp"
+            android:layout_alignBottom="@+id/mobTxt"
+            android:src="@drawable/contact"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.28" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l2"
+        android:layout_below="@+id/l1"
+        android:gravity="center"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            style="@style/detailsview"
+            android:id="@+id/fname1_head"
+            android:textStyle="bold"
+            android:text="First Name::"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/detailsview"
+            android:id="@+id/fname1"
+            tools:text="User First Name" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l3"
+        android:layout_below="@+id/l2"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            style="@style/detailsview"
+            android:id="@+id/lname1_head"
+            android:textStyle="bold"
+            android:text="Last Name::"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/detailsview"
+            android:id="@+id/lname1"
+            android:padding="5dp"
+            tools:text="User Last Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l4"
+        android:layout_below="@+id/l3"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            style="@style/detailsview"
+            android:id="@+id/Mob1_head"
+            android:textStyle="bold"
+            android:text="Contact ::"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            style="@style/detailsview"
+            android:id="@+id/mob1"
+            android:padding="5dp"
+            tools:text="+91 8080808080"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+            android:padding="5dp"
+
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

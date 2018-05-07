@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.financial_hospital.listdemo.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="211dp"
+            android:layout_alignBottom="@+id/mobTxt"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.28"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:src="@drawable/dtls" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:padding="6dp"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="0.5"
+        style="@style/detailsview"
+        android:id="@+id/f1_head"
+        android:textStyle="bold"
+        android:text="Email ::  pradipawasthi701@gmail.com"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout3"
+        android:layout_below="@+id/layout2"
+        android:padding="6dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            style="@style/detailsview"
+            android:id="@+id/f2_head"
+            android:textStyle="bold"
+            android:text="Mob :: +91 8413030025"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

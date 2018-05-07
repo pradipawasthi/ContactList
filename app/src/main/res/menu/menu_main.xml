@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="de.pradip.tutorialList.MainActivity">
+
+    <item
+        android:id="@+id/action_filter"
+        android:orderInCategory="100"
+        android:title="@string/action_filter"
+        android:icon="@drawable/ic_magnify"
+        app:showAsAction="ifRoom" >
+        <!-- "file" submenu -->
+        <menu>
+            <item android:id="@+id/filter_title"
+                android:title="@string/action_filter_title" />
+            <item android:id="@+id/filter_mob"
+                android:title="@string/action_filter_cont" />
+
+        </menu>
+    </item>
+
+
+
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+</menu>
